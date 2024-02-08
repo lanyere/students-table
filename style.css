@@ -1,0 +1,21 @@
+input , button {
+    width: 250px !important;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.students__err {
+    color: red;
+}
+
+th:hover {
+    cursor: pointer;
+}
+
+[data-id="up"] , [data-id="down"] , [data-id="random"] {
+    background-image: url(https://img.icons8.com/?size=14&id=100608&format=png);
+    background-repeat: no-repeat;
+    background-position: right;
+}

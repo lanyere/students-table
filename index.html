@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENTS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="students__form">
+            <div class="students__inputs">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">ФИО</span>
+                    </div>
+                    <input type="text" id="name" class="form-control" placeholder="Имя Фамилия Отчество" required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Дата рождения</span>
+                    </div>
+                    <input type="date" min="1900-01-01" class="form-control" placeholder="Дата рождения" id="date" required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Год начала обучения</span>
+                    </div>
+                    <input type="number" min="2000" maxlength=4 pattern="\d*" class="form-control"
+                        placeholder="Год начала обучения" id="year" required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Год конца обучения</span>
+                    </div>
+                    <input type="number" min="2000" maxlength=4 pattern="\d*" class="form-control"
+                        placeholder="Год начала обучения (только для фильтрации)" id="end-year">
+                </div>
+
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Факультет</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Факультет" id="faculty" required>
+                </div>
+
+                <p class="students__err"></p>
+            </div>
+            <div class="input-group mb-3">
+                <button type="submit" class="students__submit form-control">Добавить</button>
+            </div>
+        </form>
+
+        <table class="students__table table table-hover">
+            <thead>
+                <tr>
+                    <th data-id="random" id="field_name">Имя</th>
+                    <th data-id="random" id="field_surname">Фамилия</th>
+                    <th data-id="random" id="field_middlename">Отчество</th>
+                    <th data-id="random" id="field_birth_date">Дата рождения</th>
+                    <th data-id="random" id="field_study_start">Год начала обучения</th>
+                    <th data-id="random" id="field_faculty">Факультет</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
